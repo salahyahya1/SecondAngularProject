@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="d-flex flex-wrap">
+            @for (meal of meals; track $index) {
+            <div class="p-2 col-12 col-lg-3">
+                <div class="card ">
+                    <img [src]=" meal.strMealThumb" class="card-img-top" alt="...">
+                    <div class="card-body text-start">
+                        <h5>{{meal.strMeal}}</h5>
+                        <p class="card-text">{{meal.Desc}}</p>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
